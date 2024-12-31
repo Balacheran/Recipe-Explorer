@@ -1,11 +1,6 @@
-Sure thing! Let's create comprehensive README files for both the backend and frontend of your application. These will provide a clear guide on setting up, running, and understanding the project.
+# Recipe-Explorer Backend
 
-### Backend README
-
-```markdown
-# Food Recipe Backend
-
-This is the backend server for the Food Recipe application. It provides APIs to manage recipes, including creating, reading, updating, and deleting recipes. It also handles user authentication and image uploads.
+This is the backend server for the Recipe-Explorer application. It provides APIs to manage recipes, including creating, reading, updating, and deleting recipes. It also handles user authentication and image uploads.
 
 ## Tech Stack
 
@@ -28,8 +23,8 @@ This is the backend server for the Food Recipe application. It provides APIs to 
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/food-recipe-backend.git
-   cd food-recipe-backend
+   git clone https://github.com/Balacheran/Recipe-Explorer.git
+   cd Recipe-Explorer/backend
    ```
 
 2. Install dependencies:
@@ -49,7 +44,7 @@ This is the backend server for the Food Recipe application. It provides APIs to 
 4. Start the server:
 
    ```sh
-   npm start
+   npm run dev
    ```
 
    The server will start on `http://localhost:5000`.
@@ -72,7 +67,7 @@ This is the backend server for the Food Recipe application. It provides APIs to 
 ## Folder Structure
 
 ```
-food-recipe-backend
+recipe-explorer-backend
 ├── controllers
 │   ├── authController.js
 │   ├── recipeController.js
@@ -102,9 +97,9 @@ This project is licensed under the MIT License.
 ### Frontend README
 
 ```markdown
-# Food Recipe Frontend
+# Recipe-Explorer Frontend
 
-This is the frontend application for the Food Recipe project. It allows users to view, add, edit, and delete recipes. Users can also register and log in to manage their recipes.
+This is the frontend application for the Recipe-Explorer project. It allows users to view, add, edit, and delete recipes. Users can also register and log in to manage their recipes.
 
 ## Tech Stack
 
@@ -125,8 +120,8 @@ This is the frontend application for the Food Recipe project. It allows users to
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/food-recipe-frontend.git
-   cd food-recipe-frontend
+   git clone https://github.com/Balacheran/Recipe-Explorer.git
+   cd Recipe-Explorer/frontend
    ```
 
 2. Install dependencies:
@@ -137,9 +132,13 @@ This is the frontend application for the Food Recipe project. It allows users to
 
 3. Create a `.env` file in the root directory and add the following environment variables:
 
+    ```sh
+   npm start
+   ```
    ```env
    REACT_APP_API_URL=http://localhost:5000
    ```
+
 
 4. Start the development server:
 
@@ -152,14 +151,14 @@ This is the frontend application for the Food Recipe project. It allows users to
 ### Folder Structure
 
 ```
-food-recipe-frontend
+recipe-explorer-frontend
 ├── public
 │   ├── index.html
 ├── src
 │   ├── components
 │   │   ├── RecipeCard.js
 │   │   ├── ImageCropper.js
-│   │   ├── ItemDetail.js
+│   │   ├── ItemDetail.js   //partial complete
 │   │   ├── AddRecipePage.js
 │   ├── pages
 │   │   ├── Dashboard.js
@@ -181,12 +180,12 @@ food-recipe-frontend
 ## Features
 
 - View all recipes
-- View recipe details
+- View recipe details (partially completed)
 - Add new recipes
 - Edit existing recipes
 - Delete recipes
 - User registration and login
-- Image upload and cropping
+- Image upload (upload image in 1:1 ratio)
 
 ## Contributing
 
@@ -196,9 +195,3 @@ Feel free to contribute by opening an issue or submitting a pull request.
 
 This project is licensed under the MIT License.
 ```
-
-### Summary:
-- **Backend README**: Provides an overview of the backend server, including setup, installation, API endpoints, and folder structure.
-- **Frontend README**: Describes the frontend application, setup, installation, folder structure, and main components.
-
-If you have any additional details or features to include, feel free to ask! 😊📘👩‍💻👨‍💻
