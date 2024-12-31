@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #eee;
+    background-color: #fff;
+    background-image: url("https://www.transparenttextures.com/patterns/food.png");
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 50.9px rgba(220, 193, 142, 1.0);
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the element's total width and height */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+}
+
+.title {
+    color: #ffa500;
+    font-size: 28px;
+    font-weight: 900;
+    font-family: 'Elsie', sans-serif;
+    text-align: center;
+}
+
+.form-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    /* Ensure content fits within the container */
+    box-sizing: border-box;
+    /* Ensure padding is included in the element's total width and height */
+}
+
+.form-title {
+    color: #ffa500;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    /* Ensure padding is included in the element's total width and height */
+}
+
+label {
+    display: block;
+    color: #a6a6a6;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #a6a6a6;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #a6a6a6;
+    box-sizing: border-box;
+    /* Ensure padding is included in the element's total width and height */
+}
+
+.form-actions {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    /* Ensure content fits within the container */
+    box-sizing: border-box;
+    /* Ensure padding is included in the element's total width and height */
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e6902f;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 10px;
+    /* Ensure content fits within the container */
+    box-sizing: border-box;
+    /* Ensure padding is included in the element's total width and height */
+}
+
+.footer a {
+    color: #ffa500;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-left: 5px;
+}

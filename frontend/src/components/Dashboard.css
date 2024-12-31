@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; /* Remove padding from body */
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* Add styles for the home button */
+.home-button {
+    background-color: #FFA600;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .home-button:hover {
+    background-color: #ff8c00;
+  }
+  
+  /* Adjust the navbar styling to accommodate the new button */
+  .navbar-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFA600;
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+.nav-logo {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-bar input {
+    padding: 12px 40px 12px 40px;
+    font-size: 16px;
+    border: 1px solid #C3C2C2;
+    border-radius: 5px;
+    background-image: url('https://res.cloudinary.com/djs1us6h2/image/upload/v1735626577/Search_hojpvi.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+.search-bar input:focus {
+    background-image: none;
+}
+
+.profile-icon {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.profile-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.profile-menu button {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.profile-menu button:hover {
+    background-color: #f0f0f0;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 150px; /* Add top margin to avoid overlapping with the navbar */
+    background: linear-gradient(to right, #1A2128, rgba(27, 35, 42, -0.2)), url('https://res.cloudinary.com/djs1us6h2/image/upload/v1735626575/bowl-rainbow-salad-with-black-background_111797_xoxbzu.jpg') no-repeat center center/cover;
+    color: white;
+    border-radius: 5px;
+}
+
+.banner-content {
+    max-width: 50%;
+}
+
+.banner h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.banner p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.banner button {
+    padding: 10px 20px;
+    background-color: #FFA600;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.banner button img {
+    margin-left: 10px;
+    width: 12px;
+    height: 12px;
+}
+
+.banner-image {
+    max-width: 50%;
+}
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.popular-recipes {
+    padding: 20px;
+}
+
+.popular-recipes h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FFA600;
+}
+
+.recipe-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.recipe-card {
+    flex: 0 0 auto;
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.recipe-card p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666;
+}
+
+.recipe-card button {
+    padding: 10px 20px;
+    background-color: #FFA600;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-content, .banner-image {
+        max-width: 100%;
+    }
+
+    .recipe-slider {
+        flex-direction: column;
+    }
+
+    .recipe-card {
+        width: 100%;
+    }
+}
+.recipe-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  

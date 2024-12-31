@@ -1,0 +1,38 @@
+.recipe-card {
+    flex: 0 0 auto;
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .recipe-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .recipe-card p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .recipe-card button {
+    padding: 10px 20px;
+    background-color: #FFA600;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  

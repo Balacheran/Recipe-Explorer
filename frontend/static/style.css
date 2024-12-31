@@ -1,0 +1,165 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFA600;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #C3C2C2;
+    border-radius: 5px;
+    background-image: url(./assests/Search.png) ;
+    background-position: 60px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    background-repeat: no-repeat;
+    text-indent: 40px;
+    background-size: 20px 20px;
+}
+.search-bar input:focus{
+    background-image:none;
+   }
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #1A2128, rgba(27, 35, 42, -0.2)), url('./assests/bowl-rainbow-salad-with-black-background_111797.jpg') no-repeat center center/cover;
+    color: white;
+    border-radius: 5px;
+}
+
+.banner-content {
+    max-width: 50%;
+}
+
+.banner h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.banner p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.banner button {
+    padding: 10px 20px;
+    background-color: #FFA600;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.banner-image {
+    max-width: 50%;
+}
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.popular-recipes {
+    padding: 20px;
+}
+
+.popular-recipes h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.recipe-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.recipe-card {
+    flex: 0 0 auto;
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.recipe-card p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666;
+}
+
+.recipe-card button {
+    padding: 10px 20px;
+    background-color: #FFA600;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-content, .banner-image {
+        max-width: 100%;
+    }
+
+    .recipe-slider {
+        flex-direction: column;
+    }
+
+    .recipe-card {
+        width: 100%;
+    }
+}
