@@ -1,3 +1,4 @@
+// RecipeCard.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './RecipeCard.css';
@@ -11,12 +12,20 @@ const RecipeCard = ({ recipe }) => {
 
   return (
     <div className="recipe-card">
-      <img src={`http://localhost:5000/images/${recipe.coverImage}`} alt={recipe.title} />
-      <h3>{recipe.title}</h3>
-      <p>Duration: {recipe.time}</p>
-      <p>Rating: {recipe.rating}</p>
-      <p>{recipe.description}</p>
-      <button onClick={handleGetRecipe}>Get Recipe</button>
+      <div className="image-container">
+        <img 
+          src={`http://localhost:5000/images/${recipe.coverImage}`} 
+          alt={recipe.title} 
+          className="recipe-image"
+        />
+      </div>
+      <div className="recipe-content">
+        <h3>{recipe.title}</h3>
+        <p>Duration: {recipe.time}</p>
+        <p>Rating: {recipe.rating}</p>
+        <p className="description">{recipe.description}</p>
+        <button onClick={handleGetRecipe}>Get Recipe</button>
+      </div>
     </div>
   );
 };

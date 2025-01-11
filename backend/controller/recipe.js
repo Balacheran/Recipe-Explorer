@@ -27,16 +27,20 @@ const getRecipes = async (req, res) => {
 
 const getRecipe = async (req, res) => {
   try {
-    const recipe = await Recipes.findById(req.params.id);
-    if (!recipe) {
-      return res.status(404).json({ message: "Recipe not found" });
-    }
-    res.json(recipe);
+      const recipe = await Recipes.findById(req.params.id)
+          .populate({
+              path: 'comments',
+              options: { sort: { 'createdAt': -1 } }
+          });
+      
+      if (!recipe) {
+          return res.status(404).json({ message: "Recipe not found" });
+      }
+      res.json(recipe);
   } catch (error) {
-    return res.status(500).json({ message: "Server error" });
+      return res.status(500).json({ message: "Server error" });
   }
 };
-
 const addRecipe = async (req, res) => {
   const { title, ingredients, instructions, time, rating, description } = req.body;
 
@@ -85,5 +89,6 @@ const deleteRecipe = async (req, res) => {
     return res.status(400).json({ message: 'error' });
   }
 };
+
 
 module.exports = { getRecipes, getRecipe, addRecipe, editRecipe, deleteRecipe, upload };

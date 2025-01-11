@@ -8,12 +8,14 @@ import ItemDetail from './components/ItemDetail';
 import { ToastContainer } from 'react-toastify';
 import { AuthProvider, AuthContext } from './AuthContext';
 import 'react-toastify/dist/ReactToastify.css';
+import { RecipeProvider } from './contexts/RecipeContext';
 
 const App = () => {
   return (
-    <AuthProvider>
-      <Router>
-        <Routes>
+      <AuthProvider>
+          <RecipeProvider>
+              <Router>
+              <Routes>
           <Route path="/" element={<RequireAuth><Dashboard /></RequireAuth>} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
@@ -21,11 +23,13 @@ const App = () => {
           <Route path="/recipe/:id" element={<ItemDetail />} />
           <Route path="/dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} />
         </Routes>
-        <ToastContainer />
-      </Router>
-    </AuthProvider>
+              </Router>
+              <ToastContainer />
+          </RecipeProvider>
+      </AuthProvider>
   );
 };
+
 
 const RequireAuth = ({ children }) => {
   const { isAuthenticated } = useContext(AuthContext);

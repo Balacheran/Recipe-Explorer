@@ -14,7 +14,7 @@ const Signin = () => {
 
   const handleSignin = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/login', { email, password });
+      const response = await axios.post('http://localhost:5000/login', { email,password});
       login(response.data.token);
       toast.success('Login successful!');
       navigate('/dashboard', { replace: true });

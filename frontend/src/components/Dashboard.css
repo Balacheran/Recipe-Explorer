@@ -114,7 +114,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    margin-top: 150px; /* Add top margin to avoid overlapping with the navbar */
+    margin-top: 230px; /* Add top margin to avoid overlapping with the navbar */
     background: linear-gradient(to right, #1A2128, rgba(27, 35, 42, -0.2)), url('https://res.cloudinary.com/djs1us6h2/image/upload/v1735626575/bowl-rainbow-salad-with-black-background_111797_xoxbzu.jpg') no-repeat center center/cover;
     color: white;
     border-radius: 5px;
